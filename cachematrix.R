@@ -39,7 +39,7 @@ cacheSolve <- function(x, ...) {
   
   } else {
     matrix <- x$getMatrix()
-    inverseMatrix <- solve(matrix)
+    inverseMatrix <- solve(matrix, ...)
     x$setInverseOfMatrix(inverseMatrix)
     
     inverseMatrix
